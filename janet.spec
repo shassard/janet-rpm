@@ -2,8 +2,8 @@
 
 Summary: A dynamic language and bytecode vm
 Name: janet
-Version: 1.21.1
-Release: 2
+Version: 1.23.0
+Release: 1 
 License: MIT
 Group: Development/Languages
 Source: https://github.com/janet-lang/janet/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
@@ -41,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Sat Jul 2 2022 Stephen Hassard <steve@hassard.net> - 1.23.0-1
+- Bump to 1.23.0
+
 * Sat Apr 30 2022 Stephen Hassard <steve@hassard.net> - 1.21.1-2
 - Update build dependencies for CentOS Stream 9
 
