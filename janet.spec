@@ -3,7 +3,7 @@
 Summary: A dynamic language and bytecode vm
 Name: janet
 Version: 1.23.0
-Release: 1 
+Release: 1
 License: MIT
 Group: Development/Languages
 Source: https://github.com/janet-lang/janet/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
