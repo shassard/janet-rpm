@@ -3,7 +3,7 @@
 Summary: A dynamic language and bytecode vm
 Name: janet
 Version: 1.23.0
-Release: 1
+Release: 2
 License: MIT
 Group: Development/Languages
 Source: https://github.com/janet-lang/janet/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
@@ -33,6 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.md *.txt
 %{_bindir}/*
 %{_includedir}/%{name}
+%{_includedir}/%{name}.h
 %{_libdir}/lib%{name}.*
 %{_libdir}/pkgconfig/%{name}.pc
 %{_mandir}/man1/*
@@ -41,6 +42,9 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Sat Jul 2 2022 Stephen Hassard <steve@hassard.net> - 1.23.0-2
+- Add new files patterns for this upstream version
+
 * Sat Jul 2 2022 Stephen Hassard <steve@hassard.net> - 1.23.0-1
 - Bump to 1.23.0
 
