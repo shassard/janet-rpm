@@ -1,0 +1,19 @@
+Common subdirectories: janet-1.23.0.orig/assets and janet-1.23.0/assets
+Common subdirectories: janet-1.23.0.orig/.builds and janet-1.23.0/.builds
+Common subdirectories: janet-1.23.0.orig/examples and janet-1.23.0/examples
+Common subdirectories: janet-1.23.0.orig/.github and janet-1.23.0/.github
+diff -u janet-1.23.0.orig/Makefile janet-1.23.0/Makefile
+--- janet-1.23.0.orig/Makefile	2022-06-20 09:23:21.000000000 -0700
++++ janet-1.23.0/Makefile	2022-07-02 07:41:43.092879943 -0700
+@@ -283,7 +283,7 @@
+ 	cp $(JANET_TARGET) '$(DESTDIR)$(BINDIR)/janet'
+ 	mkdir -p '$(DESTDIR)$(INCLUDEDIR)/janet'
+ 	cp -r build/janet.h '$(DESTDIR)$(INCLUDEDIR)/janet'
+-	ln -sf '$(DESTDIR)$(INCLUDEDIR)/janet/janet.h' '$(DESTDIR)$(INCLUDEDIR)/janet.h'
++	ln -sf -t '$(DESTDIR)$(INCLUDEDIR)' janet.h janet/janet.h
+ 	mkdir -p '$(DESTDIR)$(JANET_PATH)'
+ 	mkdir -p '$(DESTDIR)$(LIBDIR)'
+ 	if test $(UNAME) = Darwin ; then \
+Common subdirectories: janet-1.23.0.orig/src and janet-1.23.0/src
+Common subdirectories: janet-1.23.0.orig/test and janet-1.23.0/test
+Common subdirectories: janet-1.23.0.orig/tools and janet-1.23.0/tools
