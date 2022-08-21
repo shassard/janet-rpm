@@ -2,12 +2,11 @@
 
 Summary: A dynamic language and bytecode vm
 Name: janet
-Version: 1.23.0
-Release: 3
+Version: 1.24.0
+Release: 1
 License: MIT
 Group: Development/Languages
 Source: https://github.com/janet-lang/janet/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Patch0: janet-symlink-fixup.patch
 URL: https://github.com/janet-lang/janet
 #BuildRequires: gtkglext-devel
 BuildRequires: gcc
@@ -42,6 +41,9 @@ meta-programming with macros, and bytecode assembly.
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Sun Aug 21 2022 Stephen Hassard <steve@hassard.net> - 1.24.0-1
+- Bump to 1.24.0
+
 * Sat Jul 2 2022 Stephen Hassard <steve@hassard.net> - 1.23.0-3
 - Fix up build paths
 
