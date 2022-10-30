@@ -2,7 +2,7 @@
 
 Summary: A dynamic language and bytecode vm
 Name: janet
-Version: 1.24.0
+Version: 1.25.1
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -41,6 +41,9 @@ meta-programming with macros, and bytecode assembly.
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Sun Oct 30 2022 Stephen Hassard <steve@hassard.net> - 1.25.1-1
+- Bump to 1.25.1
+
 * Sun Aug 21 2022 Stephen Hassard <steve@hassard.net> - 1.24.0-1
 - Bump to 1.24.0
 
